@@ -1,5 +1,6 @@
-const router = require('express');
+const { Router } = require('express');
 const userRouter = Router();
+const {userModel} = require('../db');
 
 userRouter.post('/signup', function(req, res){
     res.json({
@@ -18,3 +19,7 @@ userRouter.get('/purchases', function(req, res){
         message: "You're courses"
     })
 })
+
+module.exports = {
+    userRouter
+}

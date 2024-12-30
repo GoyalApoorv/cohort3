@@ -1,5 +1,5 @@
 const express = require("express");
-const mongoose = require("mongoose");
+
 
 const { userRouter } = require("./routes/user");
 const { courseRouter } = require("./routes/course");
@@ -15,5 +15,7 @@ app.use("/api/v1/course", courseRouter);
 
 app.listen(3000);
 console.log("listening on port 3000")
+
+
 
 
